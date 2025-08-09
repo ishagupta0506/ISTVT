@@ -27,6 +27,74 @@ ISTVT_deepfake_det/
 └── data/             # Dataset directory (to be created)
 ```
 
+## How to Run
+
+Follow these steps to set up and run the ISTVT Deepfake Detection pipeline.
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/ishagupta0506/ISTVT.git
+cd ISTVT
+````
+
+### 2. Install dependencies
+
+Make sure you have Python 3.8+ installed, then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Prepare the dataset
+
+Organize your dataset in the following structure:
+
+```
+data/
+├── train/
+│   ├── real/     # Real videos for training
+│   └── fake/     # Fake videos for training
+├── val/
+│   ├── real/     # Real videos for validation
+│   └── fake/     # Fake videos for validation
+└── test/
+    ├── real/     # Real videos for testing
+    └── fake/     # Fake videos for testing
+```
+
+**Supported video formats**: `.mp4`, `.avi`, `.mov`
+
+### 4. Train the model
+
+```bash
+python train.py
+```
+
+* Model checkpoints will be saved to `./checkpoints/`
+* Training logs will be saved to `./logs/`
+
+### 5. Run inference
+
+**Single video prediction**
+
+```bash
+python inference.py --model checkpoints/best_model.pth --video path/to/video.mp4
+```
+
+**Batch prediction**
+
+```bash
+python inference.py --model checkpoints/best_model.pth --video_dir path/to/videos/ --output_dir ./results
+```
+
+**With visualization**
+
+```bash
+python inference.py --model checkpoints/best_model.pth --video path/to/video.mp4 --visualize
+```
+
+```
+
 ## Dataset Preparation
 
 Organize your video dataset in the following structure:
