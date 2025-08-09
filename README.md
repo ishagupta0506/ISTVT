@@ -93,7 +93,6 @@ python inference.py --model checkpoints/best_model.pth --video_dir path/to/video
 python inference.py --model checkpoints/best_model.pth --video path/to/video.mp4 --visualize
 ```
 
-```
 
 ## Model Architecture
 
@@ -210,7 +209,7 @@ This implementation focuses on the core ISTVT architecture and training pipeline
 - **Robustness Testing**: Evaluation under compression, downscaling, and noise
 - **Advanced Augmentation**: Specific augmentation strategies for deepfake detection
 - **Multi-dataset Evaluation**: Cross-dataset generalization experiment
-- 
+  
 ## References
 
 The implementation is based on concepts from:
