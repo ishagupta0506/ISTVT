@@ -95,25 +95,6 @@ python inference.py --model checkpoints/best_model.pth --video path/to/video.mp4
 
 ```
 
-## Dataset Preparation
-
-Organize your video dataset in the following structure:
-
-```
-data/
-├── train/
-│   ├── real/     # Real videos for training
-│   └── fake/     # Fake videos for training
-├── val/
-│   ├── real/     # Real videos for validation
-│   └── fake/     # Fake videos for validation
-└── test/
-    ├── real/     # Real videos for testing
-    └── fake/     # Fake videos for testing
-```
-
-**Supported video formats**: `.mp4`, `.avi`, `.mov`
-
 ## Model Architecture
 
 ### Core Components
