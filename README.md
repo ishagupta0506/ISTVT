@@ -217,4 +217,10 @@ The implementation is based on concepts from:
 Zhao, Cairong, et al. "ISTVT: Interpretable Spatial-Temporal Video Transformer for Deepfake Detection." 
 IEEE Transactions on Information Forensics and Security 18 (2023): 1335-1348.
 ```
+## Dataset
+This project uses the FaceForensics++ dataset from Kaggle for training and evaluation.
+Please download and place the dataset in the data/ directory following the structure described above.
+
+## License
+This project is licensed under the MIT License.
 
