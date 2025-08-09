@@ -1,8 +1,6 @@
 # ISTVT: Interpretable Spatial-Temporal Video Transformer for Deepfake Detection
 
-**Course Project Implementation for EE656**
-
-This repository contains a PyTorch implementation of the ISTVT (Interpretable Spatial-Temporal Video Transformer) model for deepfake detection, developed as a course project for EE656. The implementation is based on the paper "ISTVT: Interpretable Spatial-Temporal Video Transformer for Deepfake Detection" but represents an independent implementation for educational purposes.
+This repository contains a PyTorch implementation of the ISTVT (Interpretable Spatial-Temporal Video Transformer) model for deepfake detection. The implementation is based on the paper "ISTVT: Interpretable Spatial-Temporal Video Transformer for Deepfake Detection," but represents an independent implementation for educational purposes.
 
 ## Project Overview
 
@@ -13,7 +11,7 @@ This implementation focuses on video-based deepfake detection using a transforme
 - **Decomposed Spatial-Temporal Attention**: Processes spatial and temporal dimensions separately to reduce computational complexity
 - **Self-Subtract Mechanism**: Captures temporal inconsistencies between consecutive frames
 - **Face-Centered Processing**: Uses MTCNN for face detection and alignment
-- **Configurable Architecture**: Easily adjustable model parameters through configuration file
+- **Configurable Architecture**: Easily adjustable model parameters through a configuration file
 
 ## Project Structure
 
@@ -27,24 +25,6 @@ ISTVT_deepfake_det/
 ├── utils.py           # Utility functions (face detection, metrics, etc.)
 ├── requirements.txt   # Python dependencies
 └── data/             # Dataset directory (to be created)
-```
-
-## Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/saubhagyapandey27/ISTVT_deepfake_det/
-cd ee656_project
-```
-
-2. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-3. **Create data directory structure**
-```bash
-mkdir -p data/{train,val,test}/{real,fake}
 ```
 
 ## Dataset Preparation
@@ -180,12 +160,8 @@ This implementation focuses on the core ISTVT architecture and training pipeline
 - **LRP-based Interpretability**: Layer-wise relevance propagation for attention visualization
 - **Robustness Testing**: Evaluation under compression, downscaling, and noise
 - **Advanced Augmentation**: Specific augmentation strategies for deepfake detection
-- **Multi-dataset Evaluation**: Cross-dataset generalization experiments
-
-## Course Project Notes
-
-This implementation was developed as part of the EE656 course curriculum. While it implements the core concepts from the ISTVT paper, it represents an independent educational implementation rather than a reproduction of the original authors' work.
-
+- **Multi-dataset Evaluation**: Cross-dataset generalization experiment
+- 
 ## References
 
 The implementation is based on concepts from:
@@ -194,6 +170,3 @@ Zhao, Cairong, et al. "ISTVT: Interpretable Spatial-Temporal Video Transformer f
 IEEE Transactions on Information Forensics and Security 18 (2023): 1335-1348.
 ```
 
-## License
-
-This project is developed for educational purposes as part of the EE656 course.
